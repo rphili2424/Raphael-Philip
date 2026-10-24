@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="page-head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="page-title">Book a Tour | Rapheal Tours</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css" class="css-link">
+
+    <!-- Connect JavaScript -->
+    <script src="script.js" defer class="javascript-link"></script>
+</head>
+
+<body class="website-body">
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="site-brand">
+            <a href="index.html" class="brand-link">
+                <span class="brand-name">RAPHEAL TOURS</span>
+                <span class="brand-tagline">Explore • Discover • Experience</span>
+            </a>
+        </div>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+            <a href="index.html" class="navigation-link">Home</a>
+            <a href="destinations.html" class="navigation-link">Destinations</a>
+            <a href="packages.html" class="navigation-link">Tour Packages</a>
+            <a href="booking.html" class="navigation-link active-link">Booking</a>
+            <a href="about.html" class="navigation-link">About Us</a>
+            <a href="gallery.html" class="navigation-link">Gallery</a>
+            <a href="contact.html" class="navigation-link">Contact</a>
+        </nav>
+
+        <a href="https://wa.me/254725415827"
+           class="button button-book"
+           target="_blank" rel="noopener noreferrer">
+            WhatsApp Us
+        </a>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- BOOKING HERO -->
+        <section class="hero-section booking-hero">
+
+            <div class="hero-overlay">
+                <div class="hero-content">
+
+                    <p class="hero-label">YOUR ADVENTURE STARTS HERE</p>
+
+                    <h1 class="hero-title">
+                        Book Your
+                        <span class="hero-highlight">Next Adventure</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Complete the form below to send a booking request
+                        directly to Rapheal Tours through WhatsApp.
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- BOOKING FORM SECTION -->
+        <section class="booking-section">
+
+            <div class="section-heading">
+                <p class="section-subtitle">PLAN YOUR JOURNEY</p>
+                <h2 class="section-title">Tour Booking Form</h2>
+
+                <p class="section-description">
+                    Provide your travel details so we can discuss
+                    your preferred trip.
+                </p>
+            </div>
+
+            <div class="booking-layout">
+
+                <!-- FORM -->
+                <div class="booking-form-container">
+
+                    <form id="booking-form"
+                          class="booking-form">
+
+                        <div class="form-group">
+                            <label for="customer-name" class="form-label">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                name="customerName"
+                                class="form-input"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-email" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="customer-email"
+                                name="customerEmail"
+                                class="form-input"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-phone" class="form-label">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customer-phone"
+                                name="customerPhone"
+                                class="form-input"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination" class="form-label">
+                                Preferred Destination
+                            </label>
+
+                            <select
+                                id="destination"
+                                name="destination"
+                                class="form-select"
+                                required>
+
+                                <option value="">Choose a destination</option>
+                                <option value="Maasai Mara">Maasai Mara</option>
+                                <option value="Mount Kenya">Mount Kenya</option>
+                                <option value="Diani Beach">Diani Beach</option>
+                                <option value="Lake Naivasha">Lake Naivasha</option>
+                                <option value="Amboseli National Park">
+                                    Amboseli National Park
+                                </option>
+                                <option value="Nairobi">Nairobi</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tour-package" class="form-label">
+                                Tour Package
+                            </label>
+
+                            <select
+                                id="tour-package"
+                                name="tourPackage"
+                                class="form-select"
+                                required>
+
+                                <option value="">Choose a package</option>
+                                <option value="Safari Adventure">
+                                    Safari Adventure
+                                </option>
+                                <option value="Beach Holiday">
+                                    Beach Holiday
+                                </option>
+                                <option value="Nature Adventure">
+                                    Nature Adventure
+                                </option>
+                                <option value="Nairobi City Tour">
+                                    Nairobi City Tour
+                                </option>
+                                <option value="Custom Tour">
+                                    Custom Tour
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="travel-date" class="form-label">
+                                    Preferred Travel Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="travel-date"
+                                    name="travelDate"
+                                    class="form-input"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="travellers" class="form-label">
+                                    Number of Travellers
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="travellers"
+                                    name="travellers"
+                                    class="form-input"
+                                    min="1"
+                                    max="100"
+                                    value="1"
+                                    required>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">
+                                Estimated Budget (KES)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="budget"
+                                name="budget"
+                                class="form-input"
+                                min="0"
+                                placeholder="Enter your estimated budget">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-message" class="form-label">
+                                Additional Requests
+                            </label>
+
+                            <textarea
+                                id="customer-message"
+                                name="customerMessage"
+                                class="form-textarea"
+                                rows="5"
+                                placeholder="Tell us about your travel preferences"></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="button button-submit">
+                            Send Booking Request on WhatsApp
+                        </button>
+
+                        <p class="form-notice">
+                            This sends your booking details to WhatsApp.
+                            Your booking is not confirmed until Rapheal
+                            Tours responds.
+                        </p>
+
+                        <p id="booking-status"
+                           class="booking-status"
+                           aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+                <!-- CONTACT DETAILS -->
+                <aside class="booking-information">
+
+                    <h2 class="booking-information-title">
+                        Need Help Booking?
+                    </h2>
+
+                    <p class="booking-information-description">
+                        Contact Rapheal Kyalo if you need help choosing
+                        a destination or planning your trip.
+                    </p>
+
+                    <div class="booking-detail">
+                        <h3 class="booking-detail-title">Phone</h3>
+                        <a href="tel:+254725415827"
+                           class="booking-detail-link">
+                            0725415827
+                        </a>
+                    </div>
+
+                    <div class="booking-detail">
+                        <h3 class="booking-detail-title">Email</h3>
+                        <a href="mailto:rphili2424@gmail.com"
+                           class="booking-detail-link">
+                            rphili2424@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="booking-detail">
+                        <h3 class="booking-detail-title">Location</h3>
+                        <p class="booking-detail-text">Nairobi, Kenya</p>
+                    </div>
+
+                    <a href="https://wa.me/254725415827?text=Hello%20Rapheal%20Tours%2C%20I%20need%20help%20planning%20a%20trip."
+                       class="button button-contact"
+                       target="_blank" rel="noopener noreferrer">
+                        Chat With Rapheal
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- BOOKING STEPS -->
+        <section class="booking-steps-section">
+
+            <div class="section-heading">
+                <p class="section-subtitle">SIMPLE AND CONVENIENT</p>
+                <h2 class="section-title">How Booking Works</h2>
+            </div>
+
+            <div class="features-container">
+
+                <article class="feature-card">
+                    <span class="feature-icon">1️⃣</span>
+                    <h3 class="feature-title">Fill the Form</h3>
+                    <p class="feature-description">
+                        Enter your contact and travel details.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon">2️⃣</span>
+                    <h3 class="feature-title">Send on WhatsApp</h3>
+                    <p class="feature-description">
+                        Review the message and send it to Rapheal.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon">3️⃣</span>
+                    <h3 class="feature-title">Confirm Your Trip</h3>
+                    <p class="feature-description">
+                        Discuss availability, prices, and arrangements.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-brand-link">
+                    <span class="footer-logo">RAPHEAL TOURS</span>
+                </a>
+
+                <p class="footer-tagline">
+                    Explore • Discover • Experience
+                </p>
+
+                <p class="footer-description">
+                    Discover the beauty of Kenya with us.
+                </p>
+            </div>
+
+            <div class="footer-navigation-section">
+                <h3 class="footer-heading">Quick Links</h3>
+
+                <nav class="footer-navigation" aria-label="Footer navigation">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="destinations.html" class="footer-link">Destinations</a>
+                    <a href="packages.html" class="footer-link">Tour Packages</a>
+                    <a href="booking.html" class="footer-link">Booking</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="gallery.html" class="footer-link">Gallery</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </nav>
+            </div>
+
+            <div class="footer-contact-section">
+                <h3 class="footer-heading">Contact Us</h3>
+
+                <p class="footer-contact-item">
+                    Phone:
+                    <a href="tel:+254725415827" class="footer-contact-link">
+                        0725415827
+                    </a>
+                </p>
+
+                <p class="footer-contact-item">
+                    Email:
+                    <a href="mailto:rphili2424@gmail.com"
+                       class="footer-contact-link">
+                        rphili2424@gmail.com
+                    </a>
+                </p>
+
+                <p class="footer-contact-item">Nairobi, Kenya</p>
+
+                <a href="https://wa.me/254725415827"
+                   class="footer-whatsapp-link"
+                   target="_blank" rel="noopener noreferrer">
+                    WhatsApp Us
+                </a>
+            </div>
+
+            <div class="footer-social-section">
+                <h3 class="footer-heading">Follow Us</h3>
+
+                <a href="https://www.facebook.com/philo.bogo"
+                   class="social-link"
+                   target="_blank" rel="noopener noreferrer">Facebook</a>
+
+                <a href="https://www.tiktok.com/@waziri7410"
+                   class="social-link"
+                   target="_blank" rel="noopener noreferrer">TikTok</a>
+
+                <a href="https://www.instagram.com/raphaelwazir/"
+                   class="social-link"
+                   target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2026 Rapheal Tours. All rights reserved.
+            </p>
+            <p class="footer-credit">Designed for Rapheal Kyalo</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
